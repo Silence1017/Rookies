@@ -1,0 +1,5 @@
+# 忽略掉node_modules，这些文件会在npm install时下载到本地。
+node_modules
+
+# Git Ignore
+# config/Message.js
