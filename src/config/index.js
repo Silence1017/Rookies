@@ -14,8 +14,16 @@ module.exports={
             code:100,
             message:'注册成功',
         },
-        USER_EXIST:{
+        ADD_SUCCESS:{
             code:101,
+            message:"添加成功",
+        },
+        UPDATE_SUCCESS:{
+            code:102,
+            message:"修改成功",
+        },
+        USER_EXIST:{
+            code:103,
             message:'用户已存在',
         },
         PASSWORD_ERROR:{
@@ -23,27 +31,35 @@ module.exports={
             message:'密码错误',
         },
         USER_NOT_EXIST: {
-            code: 404,
-            message: '用户不存在',
+            code:404,
+            message:'用户不存在',
         },
         AD_NOT_EXIST:{
             code:405,
             message:'管理员不存在',
+        },
+        AD_NOT_SUPER:{
+            code:406,
+            message:'非超级管理员没有权限',
+        },
+        DR_NOT_SUPER:{
+            code:407,
+            message:'非司机用户没有权限',
         },
         NON_ORDER:{
             code:501,
             message:'无效订单ID',
         },
         NON_FEEDBACK:{
-            code:501,
+            code:502,
             message:'无效反馈ID',
         },
         NON_COUPON:{
-            code:502,
+            code:503,
             message:'无效优惠券ID',
         },
         NON_NOTICE:{
-            code:503,
+            code:504,
             message:'无效公告ID',
         }
     }
